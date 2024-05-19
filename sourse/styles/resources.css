@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css?family=Jost&display=swap');
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background: linear-gradient(0deg, #e3e4f2 0%, #fbe9e9 100%);
+}
+
+section {
+    margin: 0;
+    padding: 0;
+}
+
+.logo {
+    width: 70px;
+}
+
+.col-lg-8 {
+    padding: 0 15px;
+}
+
+h2 {
+    margin-top: 30px; 
+    border-bottom: 2px solid #333; 
+}
+
+.card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover; 
+}
+
+
+.btn-primary {
+    background-color: #007bff; 
+    border-color: #007bff;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3; 
+}
+
+.container-fluid1
+{
+    margin-bottom: 50px;
+}
+.col-lg-2{
+    background-color: white;
+}
+.card{
+    background-color:white;
+}
+
+.weather{
+    margin-bottom: 50px;
+}
+.footer{
+    background: white;
+}
+.contact{
+    list-style:none;
+    text-align: left;
+}
+
+.list-group>a:hover{
+        color: #cfbeef;
+ 
+    
+    
+}

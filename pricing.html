@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="sourse/styles/resources.css">
+    <title>Digital library</title>
+    <link rel="website icon" type="png" href="sourse/images5/Blue and Gray Illustrative Digital Book Library Logo.png">
+
+    <style>
+        .highlight {
+            background-color: yellow;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+    <style>
+        .card a {
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a href="https://fizmat.kz/kz/"><img class="logo"
+                        src="https://fizmat.kz/wp-content/uploads/2022/03/%D0%9B%D0%BE%D0%B3%D0%BE%D1%82%D0%B8%D0%BF-%D0%9D%D0%90%D0%9E-%D0%A0%D0%A4%D0%9C%D0%A8-%D0%B0%D0%BD%D0%B3%D0%BB.png"
+                        alt="logo"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page"
+                                href="/">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pricing.html">Books</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="media.html">Media</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="practice.html">Practice</a>
+                        </li>
+                    </ul>
+                    <form id="searchForm" class="d-flex">
+                        <input type="text" id="searchInput" name="searchInput" required class="form-control me-2"
+                            id="elastic" type="search" placeholder="Search" aria-label="Search" type="text"
+                            id="searchInput" onkeyup="search()" placeholder="Search...">
+                        <button type="submit" class="btn btn-outline-success">Поиск</button>
+                    </form>
+
+                </div>
+            </div>
+        </nav>
+
+    </header>
+
+    <section>
+        <div id="cardsContainer">
+            <div class="container-fluid1 ">
+                <div class="row">
+
+                    <div class="col-lg-2">
+                        <div id="list-example" class="list-group">
+                            <h4>Content:</h4>
+                            <a class="list-group-item list-group-item-action" href="#Grade-10">Grade 10</a>
+                            <a class="list-group-item list-group-item-action" href="#Grade-9">Grade 9</a>
+                            <a class="list-group-item list-group-item-action" href="#Grade-8">Grade 8</a>
+                            <a class="list-group-item list-group-item-action" href="#Grade-7">Grade 7</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-8 col-md-12 mt-4">
+                        <div class="row" id="bookList">
+                            <h2 id="Grade-10">Grade 10 </h2>
+                            <div class="col-lg-3 mt-4 searchable-element" data-title="Arman-pv."
+                                data-author="Salgaraeva G., Bazaeva Zh., Makhanova A." data-publisher="Arman-pv."
+                                data-year="2019" data-language="Kazakh">
+                                <div class="card">
+                                    <img src="https://okulyk.kz/wp-content/books/554/554.jpg" class="card-img-top"
+                                        alt="arman-pv">
+                                    <div class="card-body">
+                                        <h5 class="card-title"><b>Arman-pv.</b></h5>
+                                        <p class="card-text">
+                                            Subject: Informatics. <br>
+                                            Author: Salgaraeva G., Bazaeva Zh., Makhanova A.<br>
+                                            Publisher: Arman-pv. <br>
+                                            Year: 2019. <br>
+                                            Language: Kazakh. <br>
+                                        </p>
+                                        <a href="https://s3.timeweb.com/29ae0e9e-okulyk-books/497/497.pdf"
+                                            class="btn btn-primary" target="_blank">Read online</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 mt-4">
+                                <div class="card">
+                                    <img src="https://okulyk.kz/wp-content/books/553/553.jpg" class="card-img-top"
+                                        alt="atamura">
+                                    <div class="card-body">
+                                        <h5 class="card-title"><b>Atamura.</b></h5>
+                                        <p class="card-text">
+                                            Subject: Informatics. <br>
+                                            Author: Isabaeva D.N., Abdulkarimova G., Shekerbekova Sh.,<br>
+                                            Publisher: Atamura. <br>
+                                            Year: 2019. <br>
+                                            Language: Kazakh. <br>
+                                        </p>
+                                        <a href="https://s3.timeweb.com/29ae0e9e-okulyk-books/495/495.pdf"
+                                            class="btn btn-primary" target="_blank">Read online</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 mt-4">
+                                <div class="card">
+                                    <img src="https://okulyk.kz/wp-content/books/552/552.jpg" class="card-img-top"
+                                        alt="mektep">
+                                    <div class="card-body">
+                                        <h5 class="card-title"><b>Mektep.</b></h5>
+                                        <p class="card-text">
+                                            Subject: Informatics. <br>
+                                            Author: Kolyeva N., Shevchuk E. <br>
+                                            Publisher: Mektep. <br>
+                                            Year: 2019. <br>
+                                            Language: Kazakh. <br>
+                                        </p>
+                                        <a href="https://s3.timeweb.com/29ae0e9e-okulyk-books/496/496.pdf"
+                                            class="btn btn-primary" target="_blank">Read online</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 mt-4">
+                                <div class="card">
+                                    <img src="https://okulyk.kz/wp-content/books/494/494.jpg" class="card-img-top"
+                                        alt="Almaty-kitap">
+                                    <div class="card-body">
+                                        <h5 class="card-title"><b>Almaty-kitap</b></h5>
+                                        <p class="card-text">
+                                            Subject: Informatics. <br>
+                                            Author: Kadyrkulov R., Nurmukhanbetova G. <br>
+                                            Publisher: Almaty-kitap. <br>
+                                            Year: 2019. <br>
+                                            Language: Kazakh. <br>
+                                        </p>
+                                        <a href="https://s3.timeweb.com/29ae0e9e-okulyk-books/494/494.pdf"
+                                            class="btn btn-primary" target="_blank">Read online</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 mt-4">
+                                <div class="card">
+                                    <img src="https://okulyk.kz/wp-content/books/523/523.jpg" class="card-img-top"
+                                        alt="Armanpv">
+                                    <div class="card-body">
+                                        <h5 class="card-title"><b>Arman-pv</b></h5>
+                                        <p class="card-text">
+                                            Subject: Informatics. <br>
+                                            Author: Salgaraeva G., Bazaeva Zh., Makhanova A. <br>
+                                            Publisher: Arman-pv. <br>
+                                            Year: 2016. <br>
+                                            Language: Russian. <br>
+                                        </p>
+                                        <a href="https://s3.timeweb.com/29ae0e9e-okulyk-books/576/576.pdf"
+                                            class="btn btn-primary" target="_blank">Read online</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 mt-4">
+                                <div class="card">
+                                    <img src="https://okulyk.kz/wp-content/books/521/521.jpg" class="card-img-top"
+                                        alt="Atamura">
+                                    <div class="card-body">
+                                        <h5 class="card-title"><b>Atamura</b></h5>
+                                        <p class="card-text">
+                                            Subject: Informatics. <br>
+                                            Author: Isabaeva D.N., Abdulkarimova G., Shekerbekova Sh., Rakhimzhanova L.
+                                            <br>
+                                            Publisher: Atamura. <br>
+                                            Year: 2019. <br>
+                                            Language: Russian. <br>
+                                        </p>
+                                        <a href="https://s3.timeweb.com/29ae0e9e-okulyk-books/521/521.pdf"
+                                            class="btn btn-primary" target="_blank">Read online</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <h2 id="Grade-9">Grade 9</h2>
+                            <div class="col-lg-3 mt-4">
+                                <div class="card">
+                                    <img src="https://okulyk.kz/wp-content/books/395/395.jpg" class="card-img-top"
+                                        alt="arman-pv">
+                                    <div class="card-body">
+                                        <h5 class="card-title"><b>Arman-pv.</b></h5>
+                                        <p class="card-text">
+                                            Subject: Informatics. <br>
+                                            Author: Salgaraeva G., Kalymova G., Oryntaeva Zh.<br>
+                                            Publisher: Arman-pv. <br>
+                                            Year: 2019. <br>
+                                            Language: Kazakh. <br>
+                                        </p>
+                                        <a href="https://s3.timeweb.com/29ae0e9e-okulyk-books/395/395.pdf"
+                                            class="btn btn-primary" target="_blank">Read online</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 mt-4">
+                                <div class="card">
+                                    <img src="https://okulyk.kz/wp-content/books/392/392.jpg" class="card-img-top"
+                                        alt="atamura">
+                                    <div class="card-body">
+                                        <h5 class="card-title"><b>Atamura.</b></h5>
+                                        <p class="card-text">
+                                            Subject: Informatics. <br>
+                                            Author: Mukhametzhanova S.T., Ten A., Golikova N.<br>
+                                            Publisher: Atamura. <br>
+                                            Year: 2019. <br>
+                                            Language: Kazakh. <br>
+                                        </p>
+                                        <a href="https://s3.timeweb.com/29ae0e9e-okulyk-books/392/392.pdf"
+                                            class="btn btn-primary" target="_blank">Read online</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 mt-4">
+                                <div class="card">
+                                    <img src="https://okulyk.kz/wp-content/books/419/419.jpg" class="card-img-top"
+                                        alt="Astana-kytap">
+                                    <div class="card-body">
+                                        <h5 class="card-title"><b>Astana-kytap.</b></h5>
+                                        <p class="card-text">
+                                            Subject: Informatics. <br>
+                                            Author: Shaniev E., Gesen I., Aidarbaev N., Akhmetov N., Erzhanov E. <br>
+                                            Publisher: Astana-Kytap. <br>
+                                            Year: 2017. <br>
+                                            Language: Kazakh. <br>
+                                        </p>
+                                        <a href="https://s3.timeweb.com/29ae0e9e-okulyk-books/419/419.pdf"
+                                            class="btn btn-primary" target="_blank">Read online</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 mt-4">
+                                <div class="card">
+                                    <img src="https://okulyk.kz/wp-content/books/394/394.jpg" class="card-img-top"
+                                        alt="Almaty-kitap">
+                                    <div class="card-body">
+                                        <h5 class="card-title"><b>Almaty-kitap</b></h5>
+                                        <p class="card-text">
+                                            Subject: Informatics. <br>
+                                            Author: Kadyrkulov R., Nurmukhanbetova G. <br>
+                                            Publisher: Almaty-kitap. <br>
+                                            Year: 2019. <br>
+                                            Language: Kazakh. <br>
+                                        </p>
+                                        <a href="https://s3.timeweb.com/29ae0e9e-okulyk-books/394/394.pdf"
+                                            class="btn btn-primary" target="_blank">Read online</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 mt-4">
+                                <div class="card">
+                                    <img src="https://okulyk.kz/wp-content/books/443/443.jpg" class="card-img-top"
+                                        alt="Armanpv">
+                                    <div class="card-body">
+                                        <h5 class="card-title"><b>Arman-pv</b></h5>
+                                        <p class="card-text">
+                                            Subject: Informatics. <br>
+                                            Author: Salgaraeva G., Bazaeva Zh., Makhanova A. <br>
+                                            Publisher: Arman-pv. <br>
+                                            Year: 2019. <br>
+                                            Language: Russian. <br>
+                                        </p>
+                                        <a href="https://s3.timeweb.com/29ae0e9e-okulyk-books/576/576.pdf"
+                                            class="btn btn-primary" target="_blank">Read online</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 mt-4">
+                                <div class="card">
+                                    <img src="https://okulyk.kz/wp-content/books/441/441.jpg" class="card-img-top"
+                                        alt="Atamura">
+                                    <div class="card-body">
+                                        <h5 class="card-title"><b>Atamura.</b></h5>
+                                        <p class="card-text">
+                                            Subject: Informatics. <br>
+                                            Author: Mukhametzhanova S.T., Ten A., Golikova N. <br>
+                                            Publisher: Atamura.. <br>
+                                            Year: 2019. <br>
+                                            Language: Russian. <br>
+                                        </p>
+                                        <a href="https://s3.timeweb.com/29ae0e9e-okulyk-books/441/441.pdf"
+                                            class="btn btn-primary" target="_blank">Read online</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <h2 id="Grade-8">Grade 8</h2>
+                            <div class="col-lg-3 mt-4">
+                                <div class="card">
+                                    <img src="https://okulyk.kz/wp-content/books/954/954.jpg" class="card-img-top"
+                                        alt="arman-pv">
+                                    <div class="card-body">
+                                        <h5 class="card-title"><b>Arman-pv.</b></h5>
+                                        <p class="card-text">
+                                            Subject: Informatics. <br>
+                                            Author: Salgaraeva G., Bazaeva Zh., Makhanova A.<br>
+                                            Publisher: Arman-pv. <br>
+                                            Year: 2021-2018. <br>
+                                            Language: Kazakh. <br>
+                                        </p>
+                                        <a href="https://s3.timeweb.com/29ae0e9e-okulyk-books/954/954.pdf"
+                                            class="btn btn-primary" target="_blank">Read online</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 mt-4">
+                                <div class="card">
+                                    <img src="https://okulyk.kz/wp-content/books/952/952.jpg" class="card-img-top"
+                                        alt="atamura">
+                                    <div class="card-body">
+                                        <h5 class="card-title"><b>Atamura.</b></h5>
+                                        <p class="card-text">
+                                            Subject: Informatics. <br>
+                                            Author: Abdulkarimova G., Shekerbekova Sh.,<br>
+                                            Publisher: Atamura. <br>
+                                            Year: 2021. <br>
+                                            Language: Kazakh. <br>
+                                        </p>
+                                        <a href="https://s3.timeweb.com/29ae0e9e-okulyk-books/952/952.pdf"
+                                            class="btn btn-primary" target="_blank">Read online</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 mt-4">
+                                <div class="card">
+                                    <img src="https://okulyk.kz/wp-content/books/369/369.jpg" class="card-img-top"
+                                        alt="mektep">
+                                    <div class="card-body">
+                                        <h5 class="card-title"><b>Astana-kytap</b></h5>
+                                        <p class="card-text">
+                                            Subject: Informatics. <br>
+                                            Author: Shakhiev E., Gessen I., Aidarbayev N., Akhmetov N., Yerzhanov E.
+                                            <br>
+                                            Publisher: Astana-Kytap <br>
+                                            Year: 2017. <br>
+                                            Language: English. <br>
+                                        </p>
+                                        <a href="https://s3.timeweb.com/29ae0e9e-okulyk-books/369/369.pdf"
+                                            class="btn btn-primary" target="_blank">Read online</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 mt-4">
+                                <div class="card">
+                                    <img src="https://okulyk.kz/wp-content/books/953/953.jpg" class="card-img-top"
+                                        alt="Almaty-kitap">
+                                    <div class="card-body">
+                                        <h5 class="card-title"><b>Almaty-kitap</b></h5>
+                                        <p class="card-text">
+                                            Subject: Informatics. <br>
+                                            Author: Kadyrkulov R., Nurmukhanbetova G. <br>
+                                            Publisher: Almaty-kitap. <br>
+                                            Year: 2017. <br>
+                                            Language: Kazakh. <br>
+                                        </p>
+                                        <a href="https://s3.timeweb.com/29ae0e9e-okulyk-books/953/953.pdf"
+                                            class="btn btn-primary" target="_blank">Read online</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 mt-4">
+                                <div class="card">
+                                    <img src="https://okulyk.kz/wp-content/books/951/951.jpg" class="card-img-top"
+                                        alt="Armanpv">
+                                    <div class="card-body">
+                                        <h5 class="card-title"><b>Arman-pv</b></h5>
+                                        <p class="card-text">
+                                            Subject: Informatics. <br>
+                                            Author: Salgaraeva G., Bazaeva Zh., Makhanova A. <br>
+                                            Publisher: Arman-pv. <br>
+                                            Year: 2017. <br>
+                                            Language: Russian. <br>
+                                        </p>
+                                        <a href="https://s3.timeweb.com/29ae0e9e-okulyk-books/951/951.pdf"
+                                            class="btn btn-primary" target="_blank">Read online</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 mt-4">
+                                <div class="card">
+                                    <img src="https://okulyk.kz/wp-content/books/949/949.jpg" class="card-img-top"
+                                        alt="Atamura">
+                                    <div class="card-body">
+                                        <h5 class="card-title"><b>Atamura</b></h5>
+                                        <p class="card-text">
+                                            Subject: Informatics. <br>
+                                            Author: Isabaeva D.N., Abdulkarimova G., Shekerbekova Sh., Rakhimzhanova L.
+                                            <br>
+                                            Publisher: Atamura. <br>
+                                            Year: 2019. <br>
+                                            Language: Russian. <br>
+                                        </p>
+                                        <a href="https://s3.timeweb.com/29ae0e9e-okulyk-books/949/949.pdf"
+                                            class="btn btn-primary" target="_blank">Read online</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <h2 id="Grade-7">Grade 7</h2>
+                            <div class="col-lg-3 mt-4">
+                                <div class="card">
+                                    <img src="https://okulyk.kz/wp-content/books/948/948.jpg" class="card-img-top"
+                                        alt="arman-pv">
+                                    <div class="card-body">
+                                        <h5 class="card-title"><b>Arman-pv.</b></h5>
+                                        <p class="card-text">
+                                            Subject: Informatics. <br>
+                                            Author: Salgaraeva G., Bazaeva Zh., Makhanova A.<br>
+                                            Publisher: Arman-pv. <br>
+                                            Year: 2021. <br>
+                                            Language: Kazakh. <br>
+                                        </p>
+                                        <a href="https://s3.timeweb.com/29ae0e9e-okulyk-books/948/948.pdf"
+                                            class="btn btn-primary" target="_blank">Read online</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 mt-4">
+                                <div class="card">
+                                    <img src="https://okulyk.kz/wp-content/books/946/946.jpg" class="card-img-top"
+                                        alt="atamura">
+                                    <div class="card-body">
+                                        <h5 class="card-title"><b>Atamura.</b></h5>
+                                        <p class="card-text">
+                                            Subject: Informatics. <br>
+                                            Author: Mukhametzhanova S.T., Ten A., Demidova L.<br>
+                                            Publisher: Atamura. <br>
+                                            Year: 2021. <br>
+                                            Language: Kazakh. <br>
+                                        </p>
+                                        <a href="https://s3.timeweb.com/29ae0e9e-okulyk-books/946/946.pdf"
+                                            class="btn btn-primary" target="_blank">Read online</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 mt-4">
+                                <div class="card">
+                                    <img src="https://okulyk.kz/wp-content/books/947/947.jpg" class="card-img-top"
+                                        alt="mektep">
+                                    <div class="card-body">
+                                        <h5 class="card-title"><b>Almaty kytap..</b></h5>
+                                        <p class="card-text">
+                                            Subject: Informatics. <br>
+                                            Author: Kadyrkulov R., Ryskulbekova A., Nurmukhanbetova G.<br>
+                                            Publisher: Almaty Kytap. <br>
+                                            Year: 2021. <br>
+                                            Language: Kazakh. <br>
+                                        </p>
+                                        <a href="https://s3.timeweb.com/29ae0e9e-okulyk-books/947/947.pdf"
+                                            class="btn btn-primary" target="_blank">Read online</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 mt-4">
+                                <div class="card">
+                                    <img src="https://okulyk.kz/wp-content/books/944/944.jpg" class="card-img-top"
+                                        alt="Arman-pv">
+                                    <div class="card-body">
+                                        <h5 class="card-title"><b>Arman-pv</b></h5>
+                                        <p class="card-text">
+                                            Subject: Informatics. <br>
+                                            Author: Salgaraeva G., Makhanova A., Rysalina O.<br>
+                                            Publisher: Arman-pv<br>
+                                            Year: 2021. <br>
+                                            Language: Russian. <br>
+                                        </p>
+                                        <a href="https://s3.timeweb.com/29ae0e9e-okulyk-books/944/944.pdf"
+                                            class="btn btn-primary" target="_blank">Read online</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 mt-4">
+                                <div class="card">
+                                    <img src="https://okulyk.kz/wp-content/books/942/942.jpg" class="card-img-top"
+                                        alt="Atamura">
+                                    <div class="card-body">
+                                        <h5 class="card-title"><b>Atamura</b></h5>
+                                        <p class="card-text">
+                                            Subject: Informatics. <br>
+                                            Author: Mukhametzhanova S.T., Ten A., Demidova L. <br>
+                                            Publisher: Atamura. <br>
+                                            Year: 2021. <br>
+                                            Language: Russian. <br>
+                                        </p>
+                                        <a href="https://s3.timeweb.com/29ae0e9e-okulyk-books/942/942.pdf"
+                                            class="btn btn-primary" target="_blank">Read online</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 mt-4">
+                                <div class="card">
+                                    <img src="https://okulyk.kz/wp-content/books/943/943.jpg" class="card-img-top"
+                                        alt="Almaty-kitap">
+                                    <div class="card-body">
+                                        <h5 class="card-title"><b>Almaty-kitap</b></h5>
+                                        <p class="card-text">
+                                            Subject: Informatics. <br>
+                                            Author: Kadyrkulov R., Ryskulbekova A., Nurmukhanbetova G. <br>
+                                            Publisher: Almaty-kitap <br>
+                                            Year: 2021. <br>
+                                            Language: Russian. <br>
+                                        </p>
+                                        <a href="https://s3.timeweb.com/29ae0e9e-okulyk-books/943/943.pdf"
+                                            class="btn btn-primary" target="_blank">Read online</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-lg-2 col-md-12">
+                        <div class="row px-2">
+                            <form id="bookForm">
+                                <input type="text" class="form-control" id="title" name="title"
+                                    placeholder="Введите название книги" required>
+                                <input type="text" class="form-control" id="author" name="author"
+                                    placeholder="Введите автора книги" required>
+                                <input type="text" class="form-control" id="year" name="year"
+                                    placeholder="Введите год книги" required>
+                                <input type="text" class="form-control" id="Publisher" name="Publisher"
+                                    placeholder="Введите издательсвто книги" required>
+                                <input type="url" class="form-control" id="link" name="link"
+                                    placeholder="Введите ссылку" required>
+                                <button type="submit" class="btn btn-primary">Добавить книгу</button>
+                            </form>
+
+
+                            <div class="col-lg-12 sidebar my-4">
+                                <!-- clock widget start -->
+                                <script
+                                    type="text/javascript"> var css_file = document.createElement("link"); css_file.setAttribute("rel", "stylesheet"); css_file.setAttribute("type", "text/css"); css_file.setAttribute("href", "https://s.bookcdn.com//css/cl/bw-cl-c22.css?v=0.0.1"); document.getElementsByTagName("head")[0].appendChild(css_file); </script>
+                                <div id="tw_22_900126552">
+                                    <div style="width:200px; height:px; margin: 0 auto;"><a
+                                            href="https://www.booked.net/time/tehran-41759">Tehran</a><br /></div>
+                                </div>
+                                <script
+                                    type="text/javascript"> function setWidgetData_900126552(data) { if (typeof (data) != 'undefined' && data.results.length > 0) { for (var i = 0; i < data.results.length; ++i) { var objMainBlock = ''; var params = data.results[i]; objMainBlock = document.getElementById('tw_' + params.widget_type + '_' + params.widget_id); if (objMainBlock !== null) objMainBlock.innerHTML = params.html_code; } } } var clock_timer_900126552 = -1; widgetSrc = "https://widgets.booked.net/time/info?ver=2;domid=;type=22;id=900126552;scode=70241;city_id=;wlangid=1;mode=1;details=0;background=ffffff;border_color=ffffff;color=686868;add_background=ffffff;add_color=333333;head_color=ffffff;border=0;transparent=0"; var widgetUrl = location.href; widgetSrc += '&ref=' + widgetUrl; var wstrackId = ""; if (wstrackId) { widgetSrc += ';wstrackId=' + wstrackId + ';' } var timeBookedScript = document.createElement("script"); timeBookedScript.setAttribute("type", "text/javascript"); timeBookedScript.src = widgetSrc; document.body.appendChild(timeBookedScript); </script>
+                                <!-- clock widget end -->
+                            </div>
+                            <div class="col-lg-12 sidebar my-4">
+                                <a class="weather" target="_blank" href="https://nochi.com/weather/almaty-10297"><img
+                                        src="https://w.bookcdn.com/weather/picture/32_10297_1_20_3658db_250_2a48ba_ffffff_ffffff_1_2071c9_ffffff_0_6.png?scode=70241&domid=589&anc_id=54222"
+                                        alt="booked.net" /></a>
+                            </div>
+
+
+                            <div class="col-lg-12 sidebar my-4">
+                                <fxwidget-er inverse="false" amount="100" decimals="2" large="false" shadow="true"
+                                    symbol="true" flag="true" changes="true" grouping="true" border="false"
+                                    main-curr="USD" sel-curr="BTC,EUR,GBP,AUD,CNY,JPY"
+                                    background-color="#c5e5f4"></fxwidget-er>
+                                <script async src="https://s.fx-w.io/widgets/exchange-rates/latest.js"></script>
+
+
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+    </section>
+
+    <footer class="footer">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-4 col-md-12 footer-text text-center">
+                    <h1>Contact Form</h1>
+                    <p>All rights Reserved 2024</p>
+
+                </div>
+                <div class="col-lg-4 col-md-12 footer-text text-center">
+                    <ul class="contact">
+                        <li>
+                            <h4>Contact:</h4>
+                        </li>
+                        <li>
+                            <p>+7 771 157 7104</p>
+                        </li>
+                        <li>
+                            <p>amina.torekeldiyeva04.@bk.ru</p>
+                        </li>
+                        <div class="conteiner">
+                            <form id="contactForm">
+                                <label for="name">Name:</label>
+                                <input type="text" id="name" name="name"  placeholder="write name" required><br><br>
+                                <label for="email">Email:</label>
+                                <input type="email" id="email" name="email"  placeholder="name@example.com" required><br><br>
+                                <label for="message">Question:</label><br>
+                                <textarea id="message" name="message" rows="2" cols="30" 
+                                    placeholder="Ask question" required></textarea><br><br>
+                                <button type="submit" class="btn btn-primary">Отправить</button>
+                            </form>
+
+                        </div>
+                        <li>
+                            <p>aminastf__</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-12">
+
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function (e) {
+            e.preventDefault();
+            const botToken = '7061742677:AAGXV2la-xfQMPgGRYLwu0rBzdYDv95BrtQ';
+            const chatId = '-1002020239935';
+            const name = document.getElementById('name').value;
+            const message = document.getElementById('message').value;
+             const text = `Имя: ${name}\nEmail: ${email}\nСообщение: ${message}`;
+            const url = `https://api.telegram.org/bot${botToken}/sendMessage`;
+            const data = {
+                chat_id: chatId,
+                text: text
+            };
+            fetch(url, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(data)
+            })
+                .then(response => response.json())
+                .then(data => {
+                    if (data.ok) {
+                        alert('Сообщение успешно отправлено!');
+                    } else {
+                        console.error('Ошибка при отправке сообщения:', data);
+                        alert(`Ошибка при отправке сообщения: ${data.description}`);
+                    }
+                })
+                .catch(error => {
+                    console.error('Ошибка:', error);
+                    alert('Ошибка при отправке сообщения');
+                });
+        });
+    </script>
+    <script>
+        document.getElementById('searchForm').addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            const query = document.getElementById('searchInput').value.toLowerCase();
+            const cards = document.getElementsByClassName('card');
+            let found = false;
+
+            for (let i = 0; i < cards.length; i++) {
+                const card = cards[i];
+                const cardText = card.textContent.toLowerCase();
+                if (cardText.includes(query)) {
+                    found = true;
+                    card.classList.remove('hidden');
+                    card.innerHTML = card.innerHTML.replace(/<mark class="highlight">(.*?)<\/mark>/g, '$1');
+                    const regex = new RegExp(`(${query})`, 'gi');
+                    card.innerHTML = card.innerHTML.replace(regex, '<mark class="highlight">$1</mark>');
+                } else {
+                    card.classList.add('hidden');
+                }
+            }
+
+            if (!found) {
+                alert(`Ничего не найдено для: "${query}"`);
+            }
+        });
+    </script>
+
+    <script>
+        document.getElementById('bookForm').addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            const title = document.getElementById('title').value;
+            const author = document.getElementById('author').value;
+            const link = document.getElementById('link').value;
+
+            if (title && author && link) {
+                addBook(title, author, link);
+
+                // Очистка формы после добавления книги
+                document.getElementById('title').value = '';
+                document.getElementById('author').value = '';
+                document.getElementById('link').value = '';
+            }
+        });
+
+        function addBook(title, author, link) {
+            const bookCard = document.createElement('div');
+            bookCard.className = 'card';
+
+            const bookTitle = document.createElement('h3');
+            bookTitle.textContent = title;
+            bookCard.appendChild(bookTitle);
+
+            const bookAuthor = document.createElement('p');
+            bookAuthor.textContent = `Автор: ${author}`;
+            bookCard.appendChild(bookAuthor);
+
+            const bookLink = document.createElement('a');
+            bookLink.href = link;
+            bookLink.target = '_blank';
+            bookLink.textContent = 'Ссылка на книгу';
+            bookCard.appendChild(bookLink);
+
+            document.getElementById('booksContainer').appendChild(bookCard);
+        }
+    </script>
+</body>
+
+</html>

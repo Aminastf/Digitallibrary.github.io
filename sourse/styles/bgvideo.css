@@ -1,0 +1,49 @@
+.bgvideo {
+    height: 70vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bgvideo video {
+    height: 500px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    z-index: 1;
+}
+.efect
+    {
+        height: 500px;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        object-fit: cover;
+        z-index: 2;
+        background-color: rgba(0, 0, 0, 0.247);
+
+}
+.video-text {
+    size: 600%;
+    height: 50px;
+    font-family: 'Times New Roman', Times, serif;
+   color: white;
+    z-index: 2;
+}
+
+.video-text>h1{
+    font-size: 100px;
+    text-shadow: 5px 5px 10px #000000;
+}
+
+.video-text>p{
+    text-decoration: underline solid;
+    text-shadow: 5px 5px 10px #000000;
+}
+
+/*books*/
